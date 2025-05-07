@@ -37,7 +37,7 @@ Como Rodar
 
    node script.js
 
-   A API estará disponível em http://localhost:3000
+   A API estará disponível em http://localhost:8000
 
 1. POST /logs - Registrar Log
 ------------------------------
