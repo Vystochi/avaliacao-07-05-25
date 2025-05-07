@@ -40,6 +40,10 @@ app.get('/logs/:id', (req, res) => {
     }
 });
 
+app.get('/', (req, res) => {
+    res.send('Ta funcionando cria porradeiro sinistro');
+});
+
 app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`)
 });
