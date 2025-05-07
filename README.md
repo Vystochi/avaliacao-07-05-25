@@ -1,7 +1,7 @@
 API de Logs
 ------------
 
-Uma API simples para registrar e consultar logs com Express e Node.js.
+Um projeto de API para registrar e consultar logs com Express e Node.js.
 
 Como Funciona
 -------------
@@ -39,9 +39,6 @@ Como Rodar
 
    A API estará disponível em http://localhost:3000
 
-Endpoints
----------
-
 1. POST /logs - Registrar Log
 ------------------------------
 Envie o nome do aluno para registrar o log.
@@ -49,7 +46,7 @@ Envie o nome do aluno para registrar o log.
 Exemplo de corpo da requisição:
 
 {
-  "nome": "João da Silva"
+  "nome": "Carlinhos Brown"
 }
 
 Resposta esperada:
@@ -65,27 +62,14 @@ Consulte um log pelo ID gerado.
 
 Exemplo de URL:
 
-http://localhost:3000/logs/uuid-gerado
+http://localhost:8000/logs/uuid-gerado
 
 Resposta esperada (se encontrado):
 
 {
-  "log": "uuid-gerado - 2025-05-07 12:13:11 - João da Silva"
+  "log": "uuid-gerado - 2025-05-07 12:13:11 - Carlinhos Brown"
 }
 
 Testando a API
 ---------------
-Você pode testar a API usando o **Postman** ou **cURL** no terminal.
-
-Exemplo de cURL para registrar um log:
-
-curl -X POST http://localhost:3000/logs -H "Content-Type: application/json" -d '{"nome": "João da Silva"}'
-
-Exemplo de cURL para consultar um log:
-
-curl http://localhost:3000/logs/uuid-gerado
-
-Licença
--------
-Este projeto está licenciado sob a Licença MIT.
-
+Você pode testar a API usando o **Postman**
